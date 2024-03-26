@@ -11,6 +11,23 @@
 
 // Write our function (we must define it too!) below
 // ...
+const joinList = function(arr) {
+  // create a string element to return as result
+  if (arr.length === 0) {
+    let arrString = '';
+    return arrString
+  }
+  let arrString = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    arrString = `${arrString}, ${arr[i]}`;
+  }
+  return arrString;
+  //loop through the function to convert the elements of array into string
+
+  //concatenate the elements together into one string
+
+  //add comma between the elements
+} 
 
 // Test / Driver Code below...
 const conceptList = ["gists", "types", "operators", "iteration", "problem solving"];
